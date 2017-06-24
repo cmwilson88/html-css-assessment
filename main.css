@@ -101,7 +101,7 @@ a {
 } 
 
 .title {
-	font-size: 100px;
+	font-size: 80px;
 	letter-spacing: 2px;
 }
 
@@ -150,6 +150,10 @@ a {
 *************************/
 
 @media(min-width: 450px) {
+	.title {
+		font-size: 100px;
+	}
+	
 	.subtitle {
 		font-size: 30px;
 	}
