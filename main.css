@@ -1,0 +1,166 @@
+/*
+	<div>Icons made by <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	<div>Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+*/
+
+/*********************
+	ELEMENT STYLES
+**********************/ 
+*{	
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	padding: 40px 10%;
+	height: 100vh;
+	width: 100vw;
+	background-image: url(./img/main-bg.jpeg);
+	background-size: cover;
+	background-position: center center;
+	font-family: "Helvetica";
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*********************
+	HEADER
+**********************/
+.navbar {
+	display: none;
+}
+
+.small_header {
+	display: flex;
+}
+
+.navbar,
+.small_header {
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.nav-item {
+	padding: 10px 40px;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.s-media {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80px;
+}
+
+.s-media img {
+	height: 15px;
+	width: 15px;
+}
+
+.ham {
+	justify-content: space-around;
+	border: 1px solid rgb(255,255,255);
+	padding: 10px;
+}
+
+.ham-line {
+	width: 32px;
+	border: 1px solid white;
+}
+
+
+/********************
+	INTRO SECTION
+*******************/
+
+.splash,
+.moveButton,
+.ham {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.splash {
+	margin: 10vh auto 0;
+
+}
+
+.title,
+.subtitle {
+	font-weight: 900;
+} 
+
+.title {
+	font-size: 100px;
+	letter-spacing: 2px;
+}
+
+.subtitle {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+/**************************
+	bottom section
+************************/
+
+.moveButton,
+.ham {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.moveButton {
+	justify-content: center;
+	background-color: white;
+	margin: 0 auto;
+}
+
+.arrow-line {
+	width: 2px;
+	height: 20px;
+	background-color: #626466;
+	opacity: .5;
+}
+
+.arrow-triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: #626466 transparent transparent transparent;
+	opacity: .5;
+}
+
+
+/*************************
+	MEDIA QUERIES
+*************************/
+
+@media(min-width: 450px) {
+	.subtitle {
+		font-size: 30px;
+	}
+}
+
+@media(min-width: 750px) {
+	.navbar {
+		display: flex;
+	}
+
+	.small_header {
+		display: none;
+	}
+}
